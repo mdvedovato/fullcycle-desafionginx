@@ -9,4 +9,6 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
 
 RUN npm install express --save && npm install mysql --save    
 
+COPY . .
+
 EXPOSE 3000
